@@ -15,6 +15,8 @@ const projectIdeaSchema = z.object({
   ),
   uiComponentsUsed: z.array(z.string()),
   mainChallenge: z.string(),
+  numberOfDevelopers: z.number(),
+  estimatedTotalTime: z.number(),
 });
 
 export type ProjectIdea = z.infer<typeof projectIdeaSchema>;
